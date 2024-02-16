@@ -38,29 +38,7 @@
 		</button>
 		<main id="main">
 			<div id="timer" class="t-focus">
-				<svg id="ring" viewbox="0 0 100 100">
-					<circle id="secondary" cx="50" cy="50" r="48" fill="none" />
-					<circle id="progress" cx="50" cy="50" r="48" fill="none" pathlength="100" />
-				</svg>
-				<div id="time"></div>
-
-				<div id="status">
-					<span id="s-focus">FOCUS</span>
-					<span id="s-short">SHORT BREAK</span>
-					<span id="s-long">LONG BREAK</span>
-				</div>
-				<button id="pauseplay" class="paused" title="Start Timer">
-					<svg id="playing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-						<path
-							d="M18 32h4V16h-4v16zm6-28C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16zm2-8h4V16h-4v16z"
-						/>
-					</svg>
-					<svg id="paused" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-						<path
-							d="M20 33l12-9-12-9v18zm4-29C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16z"
-						/>
-					</svg>
-				</button>
+				<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/rTvkqMYWTtA?si=ed2Yty0Ib671bi-B" title="YouTube video player" frameborder="0" allow="picture-in-picture; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope" allowfullscreen></iframe>
 			</div>
 			<div id="slider-container">
 				<label for="volume-slider">Volume:</label>
