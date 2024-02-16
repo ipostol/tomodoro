@@ -177,30 +177,30 @@ function pauseplay() {
   }
 }
 
-pauseplaybtn.addEventListener("click", pauseplay);
+// pauseplaybtn.addEventListener("click", pauseplay);
 
-nextbtn.addEventListener("click", () => {
-  nextRound();
-});
+// nextbtn.addEventListener("click", () => {
+//   nextRound();
+// });
 
-document.getElementById("resetround").addEventListener("click", () => {
-  if (roundInfo.running) pauseplay();
-  roundInfo.t = 0;
-  setTime();
-});
+// document.getElementById("resetround").addEventListener("click", () => {
+//   if (roundInfo.running) pauseplay();
+//   roundInfo.t = 0;
+//   setTime();
+// });
 
-document.addEventListener("keydown", (event) => {
-  if (event.isComposing || event.keyCode === 229) {
-    return;
-  }
-  if (event.code === "Space") {
-    if (document.activeElement === pauseplaybtn || viewState !== "timer") {
-      return;
-    }
-    pauseplaybtn.focus();
-    pauseplay();
-  }
-});
+// document.addEventListener("keydown", (event) => {
+//   if (event.isComposing || event.keyCode === 229) {
+//     return;
+//   }
+//   if (event.code === "Space") {
+//     if (document.activeElement === pauseplaybtn || viewState !== "timer") {
+//       return;
+//     }
+//     pauseplaybtn.focus();
+//     pauseplay();
+//   }
+// });
 
 //#endregion
 
